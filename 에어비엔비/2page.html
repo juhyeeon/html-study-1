@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        /* 태그에 적용되어 있는 스타일을 설정 */
+      /* 웹브라우저를 통일 시키는 태그, 태그에 적용되어 있는 스타일을 설정 */
       * {
-        /* 글자간의 간격 */
-        padding: 0; 
-        /* 화의 간격 */
+        /* 자신의 간격 */
+        padding: 0;
+        /* 태그들간의 거리 */
         margin: 0;
         /* 테두리 */
         box-sizing: border-box;
@@ -24,6 +24,7 @@
       header {
         background-image: url("images/background.jpg");
         height: 880px;
+        /* 비율을 유지한 체 크기를 조절 */
       }
       /* 머릿말에 이미지와 글 사이의 크기를 나눔 */
       nav {
@@ -59,9 +60,11 @@
         background-color: white;
         padding: 20px 30px;
         position: relative;
+        /* 박스의 위치를 변경하기위한 툴 */
         left: 50px;
         top: 10px;
         border-radius: 6px;
+        /* 박스 테두리를 둥글게 표현 */
         box-shadow: 0 10px 10px 0 black;
       }
       /* 서치안에 있는 글쓰 크기와 사이즈와 색깔 조절 */
@@ -106,8 +109,55 @@
         border: 0;
         cursor: pointer;
       }
+
+      main {
+        margin: 30px 80px;
+      }
+
+      section {
+        margin: 30px 0;
+      }
+
+      .section-title {
+        font-size: 25px;
+        font-weight: 800;
+        color: rgb(68, 68, 68);
+        margin-bottom: 20px;
+      }
+
+      .category-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+
+      .category-card {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        box-shadow: 0 0 3px rgb(82, 60, 30);
+      }
+
+      .category-img {
+        height: 70px;
+      }
+      .category-name {
+        display: grid;
+        align-items: center;
+        font-weight: 600;
+        margin-left: 10px;
+      }
+
+      .wide-area-img-1{
+        border-radius: 20px;
+        margin: 40px 0;
+        background-image: url(images/wide1.jpg);
+        height: 350px;
+
+      }
     </style>
-    <title>에어비엔비</title> 
+    <title>에어비엔비</title>
   </head>
   <body>
     <!-- 헤드 머릿 -->
@@ -191,6 +241,46 @@
         </div>
       </section>
     </header>
-  
+    <main>
+      <section>
+        <div class="section-title">에어비엔비 둘러보기</div>
+        <div class="category-box">
+          <div class="category-card">
+            <div
+              class="category-img center-cover-img"
+              style="background-image: url('images/category1.jpg')"
+            ></div>
+            <div class="category-name">숙소 및 부티크 호텔</div>
+          </div>
+
+          <div class="category-card">
+            <div
+              class="category-img center-cover-img"
+              style="background-image: url('images/category2.jpg')"
+            ></div>
+            <div class="category-name">트립</div>
+          </div>
+
+          <div class="category-card">
+            <div
+              class="category-img center-cover-img"
+              style="background-image: url('images/category3.jpg')"
+            ></div>
+            <div class="category-name">어드벤쳐</div>
+          </div>
+
+          <div class="category-card">
+            <div
+              class="category-img center-cover-img"
+              style="background-image: url('images/category4.jpg')"
+            ></div>
+            <div class="category-name">레스토랑</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wide-area-img-1 center-cover-img"></div>
+      </section>
+    </main>
   </body>
 </html>
