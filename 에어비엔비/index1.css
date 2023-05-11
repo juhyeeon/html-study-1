@@ -1,0 +1,195 @@
+/* index.css */
+
+ /* 웹브라우저를 통일 시키는 태그, 태그에 적용되어 있는 스타일을 설정 */
+ * {
+  /* 자신의 간격 */
+  padding: 0;
+  /* 태그들간의 거리 */
+  margin: 0;
+  /* 테두리 */
+  box-sizing: border-box;
+}
+/* 이미지 중앙에 설정 */
+.center-cover-img {
+  background-size: cover;
+  background-position: center;
+}
+/* 배경이미지를 설정 및 크기 설정 */
+header {
+  background-image: url("images/background.jpg");
+  height: 880px;
+  /* 비율을 유지한 체 크기를 조절 */
+}
+/* 머릿말에 이미지와 글 사이의 크기를 나눔 */
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+/* 로고 그림을 색깔과 사이즈 설정 */
+.logo {
+  color: white;
+  font-size: 35px;
+}
+/* ul의 칸을 설정 */
+.nav-menu ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  list-style-type: none;
+  /* 리스트 기호 삭제 */
+  grid-gap: 30px;
+  /* 글자간의 사이 여백크기 */
+}
+/* ul의 리스트의 색깔과 글씨 크기를 설정 */
+.nav-menu ul li {
+  color: white;
+  font-weight: 800;
+}
+/* 서치 박스의 크기들을 설정 */
+.search-box {
+  width: 430px;
+  display: inline-block;
+  /* 박스를 고정시킬수있다 */
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+  /* 박스의 위치를 변경하기위한 툴 */
+  left: 50px;
+  top: 10px;
+  border-radius: 6px;
+  /* 박스 테두리를 둥글게 표현 */
+  box-shadow: 0 10px 10px 0 black;
+}
+/* 서치안에 있는 글쓰 크기와 사이즈와 색깔 조절 */
+.search-explain {
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: 800;
+  color: rgb(75, 75, 75);
+}
+/* 테이블 크기를 설정 */
+table {
+  width: 100%;
+}
+/* 설정된 글씨 크기와 크기 공간을 설정 */
+.search-label {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px;
+}
+/* 입력하는 공간을 크기와 사이즈를 설정 */
+.search-input {
+  padding: 10px;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+}
+/* 검색 버튼의 위치를 설정 */
+.search-button {
+  display: grid;
+  justify-content: end;
+  padding: 20px 0;
+}
+/* 검색 버튼의 색깔과 사이즈,크기를 설정 */
+.search-button button {
+  background-color: #ff5a5f;
+  color: white;
+  width: 70px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+main {
+  margin: 30px 80px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.section-title {
+  font-size: 25px;
+  font-weight: 800;
+  color: rgb(68, 68, 68);
+  margin-bottom: 20px;
+}
+
+.category-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.category-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid whitesmoke;
+  border-radius: 6px;
+  box-shadow: 0 0 3px rgb(82, 60, 30);
+}
+
+.category-img {
+  height: 70px;
+}
+.category-name {
+  display: grid;
+  align-items: center;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.wide-area-img-1{
+  border-radius: 20px;
+  margin: 40px 0;
+  background-image: url("images/wide1.jpg");
+  height: 350px;
+  
+}
+
+.suggest-box{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.suggest-img{
+  height: 250px;
+}
+
+.wide-area-img-2{
+    margin: 20px 0;
+  background-image: url("images/wide2.png");
+  height: 300px;
+}
+
+.host-box{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.host-img{
+  height: 180px;
+}
+
+.host-type-location{
+  margin: 5px 0;
+  color: gray;
+  font-size: 13px;
+}
+
+.host-main{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(60, 60, 60);
+}
+
+.host-feedback{
+  font-size: 12px;
+  
+}
